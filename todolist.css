@@ -1,0 +1,14 @@
+thead td {
+ text-align: center;
+}
+
+#newItem {
+ margin-top: 10px;
+ margin-bottom: 20px;
+}
+
+#addButton {
+ background-color: #52526a;
+ color: white;
+}
+

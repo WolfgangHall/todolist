@@ -3,6 +3,8 @@
 <head>
  <title>To Do List</title>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+ <link rel="stylesheet" type="text/css" href="todolist.css">
 </head>
 <body>
 
@@ -27,25 +29,35 @@
 
  <div class="row-fluid">
   <div class="col-md-4">
-   <textarea class="form-control" id="newItem" placeholder="What to do ..." autocomplete="off" rows="2"></textarea>
-   <button type="button" class="btn btn-default btn-lg btn-block">Add to List</button>
+   <form class="form-group">
+    <div class="form-group">
+     <input type="text" class="form-control" id="newItem" rows="2" placeholder="What to do ..." autocomplete="off" />
+    </div>
+    <button type="submit" class="btn btn-default">Add to list</button>
+   </form>
+   <div class="alert alert-danger" role="alert">
+   You already have an element with that word!
   </div>
+  </div>
+
+  
+
  </div>
 
   <div class="col-md-8">
-   <table class="table table-striped table-bordered table hover tabled-condensed">
-   <thead colspan="8">
+   <table class="table table-striped table-bordered table hover">
+   <thead>
     <tr>
-     <td>To Do List</td>
+     <td colspan="3">To Do List</td>
     </tr>
    </thead>
 
    <tbody>
-    <tr>
-     <td></td>
-    </tr>
    </tbody>
+
    </table>
+
+
   </div>
  </div>
 
@@ -56,8 +68,10 @@
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="todolist.js"></script>
 </body>
 </html>
   
    
      
+
