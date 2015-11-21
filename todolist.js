@@ -25,7 +25,7 @@ $(document).ready(function() {
   var deleteTd = $("<td>").append(deleteBtn);
   var doneTd = $("<td>").append(doneBtn);
 
-  newRow.append(wordTd).append(deleteTd).append(doneBtn);
+  newRow.append(wordTd).append(doneTd).append(deleteTd);
   $("tbody").append(newRow);
 
   $("#newItem").val("").focus();
