@@ -33,9 +33,9 @@ $(document).ready(function() {
  });
 
  $("table").on("click", ".btn-danger", function() {
-  if($("tr").length > 2) {
+  
    $(this).parent().parent().remove();
-  }
+  
 
  });
 
