@@ -12,3 +12,30 @@ thead td {
  color: white;
 }
 
+
+.word-td.done {
+ text-decoration: line-through;
+}
+
+.navbar-nav li a{
+ color: black;
+ margin: 20px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-size: 20px;
+}
+
+.navbar-collapse {
+ text-align: center;
+ background: #18bc9c;
+}
+
+.navbar-nav {
+ display: inline-block;
+ float: none;
+}
+
+footer {
+ margin-top: 30px;
+ background-color: ghostwhite;
+}

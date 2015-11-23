@@ -2,7 +2,7 @@ $(document).ready(function() {
 
  $(".alert-danger").hide();
 
- $(".btn-default").on("click", function(e) {
+ $(".btn-block").on("click", function(e) {
   e.preventDefault();
 
   var newItem = $("#newItem").val().trim();
@@ -10,7 +10,6 @@ $(document).ready(function() {
   $("td.word-td").each(function() {
    if ($(this).text().trim().toLowerCase() === newItem.toLowerCase()) {
     isDuplicate = true;
-    return;
    }
   });
   if(isDuplicate) {
@@ -30,6 +29,8 @@ $(document).ready(function() {
 
   $("#newItem").val("").focus();
 
+
+
  });
 
  $("table").on("click", ".btn-danger", function() {
@@ -44,16 +45,10 @@ $(document).ready(function() {
   $(".alert-danger").fadeOut(1500);
  });
 
-
-});
-
-
-
+ $("table").on("click", ".btn-success", function() {
+  $(this).closest("tr").find("td:first").wrap("<strike>");
+  });
 
 
-
-
-
-
-
- 
+}); 
+    

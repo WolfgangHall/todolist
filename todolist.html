@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+
 <html>
 <head>
  <title>To Do List</title>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css">
 
  <link rel="stylesheet" type="text/css" href="todolist.css">
 </head>
@@ -12,8 +12,8 @@
  
  <div class="row-fluid">
   <div class="col-md-12">
-   <div class="navbar navbar-default">
-    <ul class="nav nav-pills">
+   <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
      <li role="presentation"><a href="#">Home</a></li>
      <li role="presentation"><a href="#">About</a></li>
      <li role="presentation"><a href="#">Contact</a></li>
@@ -34,7 +34,7 @@
     <div class="form-group">
      <input type="text" class="form-control" id="newItem" rows="2" placeholder="What to do ..." autocomplete="off" />
     </div>
-    <button type="submit" class="btn btn-default">Add to list</button>
+    <button type="submit" class="btn btn-block">Add to list</button>
    </form>
    <div class="alert alert-danger" role="alert">
    You already have that on the list!
@@ -67,12 +67,15 @@
 
 
 
+<footer>&copy Wolfgang Hall</footer>
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="todolist.js"></script>
+
 </body>
 </html>
-  
+
    
      
 
