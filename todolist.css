@@ -32,6 +32,8 @@ thead td {
 .navbar-collapse {
  text-align: center;
  background: #336b87;
+ margin-top: 5px;
+
 }
 
 .navbar-nav {
