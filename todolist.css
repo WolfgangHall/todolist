@@ -12,13 +12,17 @@ thead td {
  color: white;
 }
 
+#page-header h3 {
+ margin-left: 90px;
+}
 
-.word-td.done {
+
+.line-through {
  text-decoration: line-through;
 }
 
 .navbar-nav li a{
- color: black;
+ color: #90AFC5;
  margin: 20px;
  padding-top: 10px;
  padding-bottom: 10px;
@@ -27,7 +31,7 @@ thead td {
 
 .navbar-collapse {
  text-align: center;
- background: #18bc9c;
+ background: #336b87;
 }
 
 .navbar-nav {
@@ -38,4 +42,28 @@ thead td {
 footer {
  margin-top: 30px;
  background-color: ghostwhite;
+}
+
+table {
+ table-layout: fixed;
+ width: 100%;
+ white-space: pre-wrap;
+ word-wrap: break-word;
+}
+
+table td {
+ overflow: hidden;
+ text-align: center;
+}
+
+.row-text {
+ width: 70%;
+}
+
+.row-doneBtn {
+ width: 13%;
+}
+
+.row-removeBtn {
+ width: 17%;
 }
